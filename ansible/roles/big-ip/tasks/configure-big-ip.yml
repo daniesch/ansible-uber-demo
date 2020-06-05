@@ -25,7 +25,7 @@
     url: "https://{{ bigip_provider.server }}/mgmt/shared/declarative-onboarding/available"
     validate_certs: "{{ bigip_provider.validate_certs }}"
   retries: 30
-  delay: 5
+  delay: 10
   register: result
   until: "(result is successful) and (result.status == 200)"
 
@@ -66,7 +66,7 @@
     url: "https://{{ bigip_provider.server }}/mgmt/shared/appsvcs/available"
     validate_certs: "{{ bigip_provider.validate_certs }}"
   retries: 30
-  delay: 5
+  delay: 15
   register: result
   until: "(result is successful) and (result.status == 200)"
 
@@ -117,7 +117,7 @@
     url: "https://{{ bigip_provider.server }}/mgmt/shared/telemetry/available"
     validate_certs: "{{ bigip_provider.validate_certs }}"
   retries: 30
-  delay: 5
+  delay: 15
   register: result
   until: "(result is successful) and (result.status == 200)"
 
