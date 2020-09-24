@@ -16,7 +16,7 @@ A comprehensive demonstration Ansible-based solution to quickly build and deploy
 - [Chef Inspec](https://www.inspec.io/) 4.7+
 
 ## Prerequisites
-- This demo assumes an environment build using http://github.com/mjmenger/terraform-aws-bigip-setup. Connect to the jumphost using the information and credentials provided by the environment build.
+- This demo assumes an environment build using https://github.com/daniesch/terraform-aws-bigip-setup. Connect to the jumphost using the information and credentials provided by the environment build.
 
 - The jumphost must be able to connect to your specified BIG-IP. Run the following from within the jumphost to validate configuration and connectivity.
 ```
