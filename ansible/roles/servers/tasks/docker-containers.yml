@@ -9,7 +9,7 @@
   ignore_errors: true
 
 - name: Ensure that docker has started...
-  shell: docker ps
+  shell: sudo docker ps
   register: docker_status
   until: docker_status.rc == 0
   failed_when: docker_status.rc == 1
